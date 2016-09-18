@@ -1,0 +1,162 @@
+.left_menu, .right_menu
+{
+    margin: auto;
+    width: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.left_menu
+{
+	border-right: 2px solid white;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+	border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    margin-left: -20%;
+    transition: all 1s;
+}
+.left_call_menu 
+{
+	width: 10%;
+    border: 1px solid white;
+    float: left;
+    height: 20%;
+    border-radius: 106px;
+    position: absolute;
+    margin-left: -6%;
+    margin-top: 16%;
+    z-index: 10;
+    transition: all 1s;
+}
+
+.right_menu
+{
+	border-left: 2px solid white;
+	border-top: 2px solid white;
+	border-bottom: 2px solid white;
+	border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
+    margin-right: -20%;
+}
+.right_call_menu 
+{
+	width: 10%;
+	border:1px solid white;
+	float: right;
+}
+
+.body_container
+{
+	width: 80%;
+	height: 100%;
+	float: left;
+}
+.left_menu ul, .right_menu ul
+{
+	list-style-type:none;
+	padding: 0px;
+	margin: 0px;
+}
+.left_menu > ul > li, .right_menu > ul > li
+{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding-bottom: 24%;
+    padding-top: 23%;
+    border-bottom: 1px solid green;
+    width: 72%;
+    margin: auto;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.left_menu > ul > li > a, .right_menu > ul > li > a
+{
+	color: white;
+	text-decoration:none;  
+}
+.left_menu > ul > li
+{
+	margin-left: 2%;
+}
+.left_menu > ul > li:hover
+{
+	margin-left: 20%;
+    -ms-transform: rotate(20deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Chrome, Safari, Opera */
+    transform: rotate(20deg);
+    border-bottom-left-radius: 40px;
+}
+
+
+.right_menu > ul > li
+{
+	margin-right: 2%;
+}
+.right_menu > ul > li:hover
+{
+	margin-right: 20%;
+	-ms-transform: rotate(-20deg); /* IE 9 */
+    -webkit-transform: rotate(-20deg); /* Chrome, Safari, Opera */
+    transform: rotate(-20deg);
+    border-bottom-right-radius: 40px;
+}
+
+.home_background_Img
+{
+	background:url("../images/background_img.jpg") 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%
+
+}
+.body_box
+{
+	position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+	overflow: hidden;
+}
+.full_height
+{
+	height:100%;
+}
+
+@media (max-width: 1600px){
+	.left_menu, .right_menu
+	{
+		width: 15%;
+	}
+	.body_container
+	{
+		width: 70%;
+	}
+	.left_menu, .right_menu
+	{
+	margin-top: 5%;
+    margin-bottom: 5%;
+	}
+}
+@media (max-width: 1200px){
+	.left_menu, .right_menu
+	{
+		width: 17%;
+	}
+	.body_container
+	{
+		width: 66%;
+	}
+}
+@media (max-width: 1000px){
+	.left_menu, .right_menu
+	{
+		width: 20%;
+	}
+	.body_container
+	{
+		width: 60%;
+	}
+}

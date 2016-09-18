@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Big "S" studio</title>
+
+    <!-- BOOTSTRAP STYLES-->
+    <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <!-- CUSTOM STYLE -->
+    <link href="assets/css/custom.css" rel="stylesheet" />
+</head>
+<body>
+	<div class="body_box">
+	<div class="row full_height">
+		<div class="col-sm-12 home_background_Img">
+			<div class="home_head_class">
+
+			</div>
+			<div class="left_call_menu">1</div>
+			<div class="left_menu pull-left text-left">
+				<ul>
+					<li><a href="">F</a></li>
+					<li><a href="">T</a></li>
+					<li><a href="">G+</a></li>
+					<li><a href="">YT</a></li>
+					<li><a href="">lN</a></li>
+				</ul>
+			
+			<div class="left_menu_button">
+			</div>
+			
+			</div>
+
+			<div class="body_container">
+
+			</div>
+			
+			<div class="right_call_menu">2</div>
+			<div class="right_menu pull-right text-right">
+				<ul>
+					<li><a href="">About us</a></li>
+					<li><a href="">Portofolio</a></li>
+					<li><a href="">Contact</a></li>
+					<li><a href="">Service</a></li>
+					<li><a href="">Fun Port</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</div>
+	<script src="assets/js/jquery.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.js"></script>			
+		<script type="text/javascript">
+			$(document).ready(function(){
+				// $('.left_call_menu').hover(
+				//   function () {
+				//     $('.left_menu').css('margin-left','0%');
+				//   }, 
+				//   function () {
+				//     $('.left_menu').css('margin-left','-20%');
+				//   }
+				// );
+			
+				$('.left_call_menu').on('click',function(){
+					$(this).css('margin-left','-10%');
+					setTimeout(function(){
+						$('.left_menu').css('margin-left','0%');
+					},1000);
+				});
+				$(document).click(function(event) { 
+				    if(!$(event.target).closest('.left_menu').length) {
+				        if($('.left_menu').is(":visible")) {
+				        	$('.left_menu').css('margin-left','-20%');
+					        setTimeout(function(){
+								$('.left_call_menu').css('margin-left','0%');
+							},1000);
+				        }
+				    }        
+				})
+
+			});
+		</script>
+</body>
+</html>
+
+.left_call_menu {
+    width: 10%;
+    border: 1px solid white;
+    float: left;
+    height: 20%;
+    border-radius: 106px;
+    position: absolute;
+    margin-left: -6%;
